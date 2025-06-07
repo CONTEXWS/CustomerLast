@@ -357,7 +357,7 @@
                     const urls = Array.from(xmlDoc.querySelectorAll('url loc')).map(loc => loc.textContent);
                     
                     // İlk 10 URL'yi tara (çok fazla istek göndermemek için)
-                    const limitedUrls = urls.slice(0, 10);
+                    const limitedUrls = urls.slice(0, 30);
                     
                     for (const url of limitedUrls) {
                         if (url !== baseUrl) {
